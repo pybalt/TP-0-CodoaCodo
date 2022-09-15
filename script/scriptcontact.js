@@ -1,49 +1,12 @@
-// let botonSubmit= document.querySelector('submit');
-// botonSubmit.onsubmit= () => {
-//     swal({
-//         title: "¡Mensaje enviado!",
-//         text: `Trataremos de responderte lo antes posible!`,
-//         icon: "success",
-//         buttons: {
-//             cerrar: {
-//                 text: "Cerrar",
-//                 value: false
-//             }
-        
-//         }
-//      } )
-// }
 
+const $form = document.querySelector('#form')
+const $buttonMailto = document.querySelector('#mail')
 
+$form.addEventListener('submit', handleSubmit)
 
-// botonSubmit.onsubmit= alert("Holaa");
-
-// function muestraMensaje() {
-//     console.log('Gracias por pinchar');
-//   }
-//   document.getElementsByClassName("buttonsubmit").onsubmit = muestraMensaje;
-
-
-//  const $form = document.querySelector('.contact')
-
-//  $form.addEventListener('submit', handleSubmit)
-
-// async function handleSubmit (event){
-//   event.preventDefault()
-//   const form= new FormData(this)
-//   const response = await fetch (this.action, {
-//     method: this.method,
-//     body: form,
-//     headers: {
-//       'Accept': 'application/json'
-//     }
-    
-//   }
-
-//   )
-//   if (response.ok){
-//     this.reset()
-//     alert('Gracias por contactarnos!')
-//   }
-// }
-  
+function handleSubmit(event) {
+  event.preventDefault()
+  const form = new FormData(this)
+  $buttonMailto.setAttribute('href', `mailto:espinosaflorezsarah@gmail.com?subject=Nombre: ${form.get('name')}  Correo: ${form.get('email')}&body=${form.get('message')}`)
+  $buttonMailto.click()
+}

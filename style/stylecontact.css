@@ -94,10 +94,10 @@
     background: #e3e6f3;
   }
   
-  .form-contact {
-    margin-top: 150px;
+  .form {
+    margin-top: 100px;
     background: #FFF;
-    width: 400px;
+    width: 800px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -119,23 +119,23 @@
     padding: 5px;
   }
   
-  .contact {
+  .form {
     padding: .8rem;
     overflow: hidden;
     color: gray;
   }
   
-  .contact label, .contact input, .contact textarea {
+  .form label, .form input, .form textarea {
     display: block;
     width: 100%;
     margin-bottom: 5px;   
   }
   
-  .contact label {
+  .form label {
     font-weight: 700;
   }
   
-  .contact input:not([type='submit']), .contact textarea {
+  .form input:not([type='submit']), .form textarea {
     border: none;
     border-bottom: 2px solid #088178;
     margin-bottom: 10px;
@@ -144,11 +144,12 @@
     color: gray;
   }
   
-  .contact textarea {
-    min-height: 100px;
+  .form textarea {
+    min-height: 80px;
+    max-height: 150px;
   }
   
-  input[type='submit'] {
+  button[type='submit'] {
     padding: 10px;
     background: #088178;
     border: none;
