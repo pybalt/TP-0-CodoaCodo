@@ -99,7 +99,7 @@ body{
 
 /*Home page */
 #hero{
-    background-image: url("/Imgs/hero4.png");
+    background-image: url("/repositorio_JS/Imgs/hero4.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -123,7 +123,7 @@ padding-bottom: 15px;
 }
 
 #hero button{
-    background-image: url("/Imgs/button.png");
+    background-image: url("/repositorio_JS/Imgs/button.png");
     background-color: transparent;
     color: #088178;
     border: 0;
